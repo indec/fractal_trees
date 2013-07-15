@@ -21,7 +21,7 @@ jQuery(document).ready(function () {
 
     function draw (x, iterations) {
         var tree = iterate("X", 0, iterations);
-        var y = 600;
+        var y = 400;
         var len = 1;
         var a = 0;
         var stack = [];
@@ -61,7 +61,7 @@ jQuery(document).ready(function () {
         }
     }
 
-    for (var z = 1; z < 7; z++) {
-        draw( 20 * z*z, z);
+    for (var z = 3; z < 7; z++) {
+        draw( 15 * z*z - 50, z);
     }
 });
